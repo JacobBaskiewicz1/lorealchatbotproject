@@ -1,3 +1,16 @@
+/* --- L'Oréal Accent Colors --- */
+:root {
+  --accent-red: #ff003b;
+  --accent-gold: #e3a535;
+}
+
+/* Center and size the L'Oréal logo */
+.loreal-logo {
+  display: block;
+  margin: 0 auto 16px auto;
+  max-width: 180px;
+  height: auto;
+}
 /* —— basic reset —— */
 * {
   box-sizing: border-box;
@@ -26,8 +39,10 @@ body {
 
 .site-title {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 10px;
+  color: var(--accent-red);
+  letter-spacing: 1px;
 }
 
 /* chat window */
@@ -37,13 +52,14 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 2px solid var(--accent-gold);
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
   background: #fafafa;
   white-space: pre-line;
+  border-radius: 12px;
 }
 
 /* messages */
@@ -53,7 +69,7 @@ body {
 }
 
 .msg.user {
-  color: #000;
+  color: var(--accent-red);
 }
 
 .msg.ai {
@@ -81,7 +97,7 @@ body {
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
+  background: var(--accent-red);
   color: #fff;
   border: none;
   padding: 12px;
@@ -92,6 +108,8 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: background 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(255, 0, 59, 0.08);
 }
 
 .chat-form button .material-icons {
@@ -99,7 +117,8 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: var(--accent-gold);
+  color: #222;
 }
 
 .chat-form button:focus {
@@ -134,10 +153,11 @@ body {
 
 .site-footer a {
   margin: 0 8px;
-  color: #000;
+  color: var(--accent-gold);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: var(--accent-red);
 }
